@@ -316,7 +316,7 @@ void frmComTool::readData()
         if (ui->ckHexReceive->isChecked()) {
             buffer = QtHelperData::byteArrayToHexStr(data);
         } else {
-            //buffer = QtHelperData::byteArrayToAsciiStr(data);
+            buffer = QtHelperData::byteArrayToAsciiStr(data);
             buffer = QString::fromLocal8Bit(data);
         }
 
